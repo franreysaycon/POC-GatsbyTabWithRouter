@@ -28,9 +28,9 @@ const Container = styled.div`
 
 `;
 
-const Tab = ({ active, children }) => (
-  <Container active={active}>
-      <div>
+const Tab = ({ id, active, children, onClick }) => (
+  <Container id={id} active={active} onClick={onClick}>
+      <div id={id}>
           { children }
       </div>
   </Container>
